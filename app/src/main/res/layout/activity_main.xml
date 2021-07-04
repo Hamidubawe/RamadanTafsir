@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainToolbar"
+        android:background="@color/colorPrimary"
+        app:title="Ramadan Tafsir"
+        app:titleTextColor="@color/gnt_white"
+        android:gravity="center_horizontal"
+        app:menu="@menu/main_menu"
+        android:layout_centerHorizontal="true"/>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/mAdView"
+        android:layout_below="@id/mainToolbar"/>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/mAdView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="SMART_BANNER"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom"
+        android:layout_above="@id/bottomNavigation"
+        ads:adUnitId="@string/banner_ad_unit_id"/>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        app:backgroundTint="@color/colorPrimary"
+        android:clickable="true"
+        android:layout_marginEnd="0dp"
+        app:itemTextColor="@drawable/selctor_bottom"
+        app:itemIconTint="@drawable/selctor_bottom"
+        app:itemHorizontalTranslationEnabled="true"
+        app:labelVisibilityMode="labeled"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/bottom_nav_menu"
+        android:focusable="true" />
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "282734303882",
+    "firebase_url": "https://ramadan-tafsir-490f8-default-rtdb.firebaseio.com",
+    "project_id": "ramadan-tafsir-490f8",
+    "storage_bucket": "ramadan-tafsir-490f8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:282734303882:android:e2cba127195fca5c0b2b73",
+        "android_client_info": {
+          "package_name": "com.arewabeatz.ramadantafsir"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "282734303882-42he4lfeu2i356ope0rddutfv44lbjvf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.arewabeatz.ramadantafsir",
+            "certificate_hash": "642edcdb8567f9214412a180a82a08ff31e1e9ec"
+          }
+        },
+        {
+          "client_id": "282734303882-j8p1q53rqjpgbffd3gkns263skr7k945.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs-efwsyw9viPz7zY405gTSPOxWfRdlC0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "282734303882-j8p1q53rqjpgbffd3gkns263skr7k945.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:282734303882:android:0549085c877e06290b2b73",
+        "android_client_info": {
+          "package_name": "com.arewabeatz.ramadantafsir2021"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "282734303882-j8p1q53rqjpgbffd3gkns263skr7k945.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs-efwsyw9viPz7zY405gTSPOxWfRdlC0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "282734303882-j8p1q53rqjpgbffd3gkns263skr7k945.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

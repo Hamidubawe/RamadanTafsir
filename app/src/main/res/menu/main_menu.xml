@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Share"
+        android:icon="@drawable/ic__share"
+        app:showAsAction="ifRoom"
+        android:id="@+id/share"/>
+
+    <!--<item
+        android:title="Support Us"
+        android:id="@+id/support"/>-->
+
+    <item
+        android:title="About"
+        android:id="@+id/aboutMe"/>
+
+    <item
+        android:title="Feedback"
+        android:id="@+id/feedBack"/>
+
+    <item
+        android:title="Exit"
+        android:id="@+id/exit"/>
+</menu>

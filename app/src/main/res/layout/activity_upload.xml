@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:id="@+id/uploadToolbar"
+        app:title="Upload Music"
+        app:titleTextColor="@color/gnt_white"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/uploadToolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/addTafsir"
+                android:layout_centerHorizontal="true"
+                android:text="Upload Tafsir"
+                android:background="#ED5656"
+                android:textColor="@color/colorAccent"
+                android:padding="7dp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/ic_play"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/addTafsir"
+                android:layout_marginTop="10dp"
+                android:id="@+id/albumCover"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/albumCover"
+                android:layout_margin="10dp"
+                android:id="@+id/linear">
+
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tafsir Title"
+                    android:inputType="text"
+                    android:background="@drawable/editextstyle"
+                    android:padding="10dp"
+                    android:id="@+id/songTitle"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:hint="Tafsir Description"
+                    android:inputType="textMultiLine"
+                    android:background="@drawable/editextstyle"
+                    android:padding="7dp"
+                    android:id="@+id/songDescription"
+                    android:layout_marginTop="7dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Choose Sheikh"
+                    android:textColor="#ff00"
+                    android:id="@+id/chooseCategory"
+                    android:layout_marginTop="10dp"/>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/malamSpinner"
+                    android:layout_marginTop="7dp"
+                    android:padding="5dp"
+                    android:background="@drawable/editextstyle"/>
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Publish Tafsir"
+                    android:layout_marginStart="15dp"
+                    android:id="@+id/publishBtn"
+                    android:padding="10dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/colorAccent"/>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

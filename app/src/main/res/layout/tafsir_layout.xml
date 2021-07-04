@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="12dp"
+    android:elevation="3dp"
+    android:padding="12dp"
+    android:layout_margin="3dp">
+
+    <RelativeLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_book"
+            android:layout_centerVertical="true"
+            android:id="@+id/albumart"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="5dp"
+            android:text="Song title.."
+            android:singleLine="true"
+            android:id="@+id/songTitle"
+            android:layout_toEndOf="@id/albumart"
+            android:layout_toStartOf="@id/menuMore"
+            android:layout_marginStart="5dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="Song Publisher"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:id="@+id/songArtist"
+            android:layout_marginStart="5dp"
+            android:layout_below="@id/songTitle"
+            android:layout_toEndOf="@id/albumart" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_more"
+            android:layout_centerVertical="true"
+            android:id="@+id/menuMore"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

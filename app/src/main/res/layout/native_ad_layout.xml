@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:layout_margin="5dp">
+
+    <com.google.android.ads.nativetemplates.TemplateView
+        android:id="@+id/my_template"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:gnt_template_type="@layout/gnt_small_template_view"/>
+
+    <!--<com.google.android.gms.ads.nativead.NativeAdView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/layout_photo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="5dp"
+                android:text="layout header"
+                android:singleLine="true"
+                android:id="@+id/layout_header"
+                android:layout_toEndOf="@id/layout_photo"
+                android:layout_marginStart="5dp"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:text="layout contnet"
+                android:maxLines="2"
+                android:singleLine="true"
+
+                android:id="@+id/layout_content"
+                android:layout_marginStart="5dp"
+                android:layout_below="@id/layout_header"
+                android:layout_toEndOf="@id/layout_photo" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:text="Button"
+                android:background="@color/colorBlue"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:id="@+id/layout_button"
+                android:layout_marginStart="5dp"
+                android:layout_below="@id/layout_content"
+                android:layout_toEndOf="@id/layout_photo" />
+
+
+        </RelativeLayout>
+
+
+
+    </com.google.android.gms.ads.nativead.NativeAdView>-->
+
+</LinearLayout>
